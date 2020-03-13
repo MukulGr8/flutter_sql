@@ -53,7 +53,7 @@ class DatabaseHelper {
 
   Future<List> getAllNotes() async {
     var dbClient = await db;
-    var result = await dbClient
+    var result = await dbClient //this is change
         .query(tableNote, columns: [columnId, columnTitle, columnDescription]);
 //    var result = await dbClient.rawQuery('SELECT * FROM $tableNote');
 
